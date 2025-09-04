@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    {\Huge \scshape Sagar Singh Kushwaha} \\ \vspace{4pt}
+    \small
+    \faPhone\ 7049926442 \quad
+    \faEnvelope\ \href{mailto:sagarkushwah2510@gmail.com}{sagarkushwah2510@gmail.com} \\ \vspace{2pt}
+    \faLinkedin\ \href{https://linkedin.com/in/sagar-singh-kushwaha-832036245}{https://linkedin.com/in/sagar-singh-kushwaha-832036245} \quad
+    \faGithub\ \href{https://github.com/sagar2525}{https://github.com/sagar2525}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\vspace{-3pt}
+  \resumeSubHeadingListStart
+    \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{VIT Bhopal University} & \textbf{\small Oct 2022 -- Aug 2026 (Expected)} \\
+      {\small Bachelor of Science in Computer Science} & {\small CGPA: 8.58 / 10} \\
+    \end{tabular*}\vspace{-7pt}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\small{
+C++, Python, JavaScript, HTML/CSS, SQL, Flask, NumPy, Pandas, scikit-learn, PyQt5; VS Code, PyCharm, Git, GitHub, MongoDB, AWS (Basics); strong communication and teamwork.
+}
+\vspace{-4pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-2pt}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{SynchCast – Simultaneous Audio Streaming to Multiple Bluetooth Devices}\\ 
+    Python, C++, circmd, virtual audio driver}{May 2025 -- Jun 2025  \href{https://github.com/sagar2525/SynchCast}{\textcolor{blue}{[Link]}}}
+    \resumeItemListStart
+    \resumeItem{Engineered a multithreaded audio pipeline enabling simultaneous streaming to Bluetooth, wired, and USB devices with 99.9\% uptime during playback.}
+    \resumeItem{Developed a user-friendly Python (PyQt5) GUI for real-time audio routing and multi-device volume control, cutting user setup time by 70\%.}
+    \resumeItem{Automated device discovery and output selection with a custom virtual audio driver, streamlining configuration to just 3 clicks and boosting scalability by 50\%.}
+  \resumeItemListEnd
+\vspace{-5pt} % <-- Spacing between projects
+
+  \resumeProjectHeading
+    {\textbf{Intelligent Mental Health Support Platform}\\ 
+    Python, Google Colab}{Sep 2024 -- May 2025  \href{https://github.com/sagar2525/mental_health_bot}{\textcolor{blue}{[Link]}}}
+    \resumeItemListStart
+    \resumeItem{Developed an AI-powered mental health chatbot that delivers personalized interventions to 50+ test users.}
+    \resumeItem{Fine-tuned a large language model (LLM) with curated psychology and mental health datasets, improving response accuracy and delivering more personalized user support.}
+    \resumeItem{Synthesized insights from 10+ research papers and designed 3 clinical frameworks in collaboration with mental health professionals, ensuring 100\% ethical compliance and boosting user adoption.}
+    
+  \resumeItemListEnd
+\vspace{-5pt} % <-- Spacing between projects
+
+  \resumeProjectHeading
+  {\textbf{AI Drawer -- Integrated AI Platform}\\ 
+  \emph{scikit-learn, Flask, pandas, API}}{Aug 2023 -- Nov 2024  \href{https://github.com/sagar2525/AIDrawer}{\textcolor{blue}{[Link]}}}
+  \resumeItemListStart
+  \resumeItem{Pioneered AI Drawer, a unified orchestration platform integrating Gemini, Perplexity, DALL‑E, and Claude to automate intelligent query routing via a custom ML‑based domain classifier.}
+  \resumeItem{Trained an ML-based domain classifier trained on 6,000+ labeled samples—boosted detection accuracy from 60\% to 65\% and eliminated manual model selection.}
+  \resumeItem{Architected a robust API orchestration system with robust key management, automated error handling, and a user-friendly Flask interface for seamless multi-AI interactions.}
+  \resumeItemListEnd
+
+\vspace{-5pt} % Final spacing for consistency, optional
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\vspace{1pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+       {SampurnaBharat}{Feb 2025 -- Apr 2025 \href{https://github.com/sagar2525/samapurnabharat1}{\textcolor{blue}{[Link]}}}
+       {Front-End Developer Intern}{Jalgaon, Maharashtra}
+        \resumeItemListStart
+          \resumeItem{Enhanced the website’s UI/UX by realigning product sections and implementing modern, responsive layouts for a cleaner and more intuitive design.}
+          \resumeItem{Revamped product cards with interactive effects and optimized styling, resulting in improved user engagement and a 20\% increase in session duration.}
+          \resumeItem{Developed and optimized reusable front-end components using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and improved site performance.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-7pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{Stock Market Analyst, Fintech Club}{Jul 2023 -- Jun 2025}{Team Lead}{VIT Bhopal University}
+    \resumeItemListStart
+      \resumeItem {Represented the university in the \textbf{National Financial Literacy Quiz – Finale Round}; analyzed 50+ stock
+portfolios monthly and delivered actionable insights to 500+ members with 60\% trend prediction accuracy.}
+      \resumeItem{Mentored 15+ junior analysts and organized skill-building workshops, strengthening members’ practical trading strategies and market awareness.}
+    \resumeItemListEnd
+
+  \resumeSubheading{PR Team Member, E-Cell VIT Bhopal}{Jan 2024 -- Jun 2025}{Core Member}{VIT Bhopal University}
+    \resumeItemListStart
+      \resumeItem{Directed multi-platform PR campaigns and secured sponsorships with student bodies, boosting follower engagement by 45\% and event funding by 20\%.}
+      \resumeItem{Spearheaded 2 large-scale networking events for 200+ attendees, driving a 60\% increase in participation and strengthening the club’s industry connections.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
